@@ -3,6 +3,8 @@ import {FaBars, FaTimes, FaGithub, FaLinkedin,} from 'react-icons/fa'
 import {HiOutlineMail} from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 import Logo from '../assets/logo.png'
+import {Link} from 'react-scroll'
+
 
 export const Navbar = () => {
     const [nav, setNav] = useState(false)
@@ -16,12 +18,26 @@ export const Navbar = () => {
 
         {/* Menü */}
             <ul className='hidden md:flex'>
-                <li>Home</li>
-                <li>About</li>
-                <li>Experience</li>
-                <li>Skills</li>
-                <li>Project</li>
-                <li>Contact</li>
+                <li>
+                <Link  to="home" smooth={true}  duration={500}>
+                Home
+               </Link>
+                </li>
+                <li><Link  to="about" smooth={true}  duration={500}>
+                About
+               </Link></li>
+                <li><Link  to="experience" smooth={true}  duration={500}>
+                Experience
+               </Link></li>
+                <li><Link  to="skill" smooth={true}  duration={500}>
+                Skills
+               </Link></li>
+                <li><Link  to="project" smooth={true}  duration={500}>
+                Project
+               </Link></li>
+                <li><Link  to="contact" smooth={true}  duration={500}>
+                Contact
+               </Link></li>
             </ul>
 
         {/* Hamburger */}
