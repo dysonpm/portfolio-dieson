@@ -1,4 +1,5 @@
 import React from 'react'
+import Solanapay from '../assets/solanapay.jpg'
 
 const Project = () => {
   return (
@@ -9,7 +10,8 @@ const Project = () => {
                 <p className='py-6'>My recent Work&#128071;&#127999;</p>
             </div>
 
-            <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
+            <div style={{backgroundImage: `url(${Solanapay})`}}
+             className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
                 <div className='shadow-lg shadow-[#272727] group container rounded-md justify-center items-center mx-auto content-div'>
 
                     {/* Hover Effect */}
