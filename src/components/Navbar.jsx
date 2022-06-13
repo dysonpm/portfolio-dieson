@@ -23,21 +23,31 @@ export const Navbar = () => {
                 Home
                </Link>
                 </li>
-                <li><Link  to="about" smooth={true}  duration={500}>
+                <li>
+                <Link  to="about" smooth={true}  duration={500}>
                 About
-               </Link></li>
-                <li><Link  to="experience" smooth={true}  duration={500}>
+               </Link>
+               </li>
+                <li>
+                <Link  to="experience" smooth={true}  duration={500}>
                 Experience
-               </Link></li>
-                <li><Link  to="skill" smooth={true}  duration={500}>
+               </Link>
+               </li>
+                <li>
+                <Link  to="skill" smooth={true}  duration={500}>
                 Skills
-               </Link></li>
-                <li><Link  to="project" smooth={true}  duration={500}>
+               </Link>
+               </li>
+                <li>
+                <Link  to="project" smooth={true}  duration={500}>
                 Project
-               </Link></li>
-                <li><Link  to="contact" smooth={true}  duration={500}>
+               </Link>
+               </li>
+                <li>
+                <Link  to="contact" smooth={true}  duration={500}>
                 Contact
-               </Link></li>
+               </Link>
+               </li>
             </ul>
 
         {/* Hamburger */}
@@ -47,12 +57,35 @@ export const Navbar = () => {
 
         {/* Mobiles Menü */}
             <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-black flex flex-col justify-center items-center ' }>
-                <li className='py-6 text-3xl'>Home</li>
-                <li className='py-6 text-3xl'>About</li>
-                <li className='py-6 text-3xl'>Experience</li>
-                <li className='py-6 text-3xl'>Skills</li>
-                <li className='py-6 text-3xl'>Project</li>
-                <li className='py-6 text-3xl'>Contact</li>
+                <li onClick={handleClick} className='py-6 text-3xl'>
+                <Link onClick={handleClick} to="home" smooth={true}  duration={500}>
+                Home
+               </Link></li>
+                <li className='py-6 text-3xl'>
+                     <Link  to="about" smooth={true}  duration={500}>
+                About
+               </Link>
+                </li>
+                <li className='py-6 text-3xl'>
+                     <Link  to="experience" smooth={true}  duration={500}>
+                Experience
+               </Link>
+                </li>
+                <li className='py-6 text-3xl'>
+                     <Link  to="skills" smooth={true}  duration={500}>
+                Skills
+               </Link>
+                </li>
+                <li className='py-6 text-3xl'>
+                     <Link  to="project" smooth={true}  duration={500}>
+                Project
+               </Link>
+                </li>
+                <li className='py-6 text-3xl'>
+                     <Link  to="contact" smooth={true}  duration={500}>
+                Contact
+               </Link>
+                </li>
             </ul>
 
         {/* Social Icons */}
@@ -60,19 +93,19 @@ export const Navbar = () => {
                 <ul>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500'>
                         <a className='flex justify-between items-center w-full text-white'
-                        href="/">
+                        href="https://www.linkedin.com/in/dieson-mbengi-powikani-28b1b6199/">
                            LinkedIn <FaLinkedin size={30} />
                         </a>
                     </li>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[black]'>
                         <a className='flex justify-between items-center w-full text-white'
-                        href="/">
+                        href="https://github.com/dysonpm">
                            Github <FaGithub size={30} />
                         </a>
                     </li>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[red]'>
                         <a className='flex justify-between items-center w-full text-white'
-                        href="/">
+                        href="dieson.powikani@gmail.com">
                            Email <HiOutlineMail size={30} />
                         </a>
                     </li>
