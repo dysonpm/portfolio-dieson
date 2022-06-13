@@ -14,7 +14,7 @@ const Home = () => {
             <p className='text-white py-4 max-w-[700px]'>Im a Front-End Developer specializing in building responsive front-end application. Currently, I'm also focused on building Dapps on the Ethereum and Solana Network </p>
             <div>
                 <button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-red-600 hover:border-red-600'>
-                  View Work
+                  View Project
                 <span className='group-hover:rotate-90 duration-300'>
                 <HiArrowNarrowRight className='ml-3'/>
                 </span>
